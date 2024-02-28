@@ -1,258 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Selecione Suas Cartas"
-        android:textAlignment="center"
-        android:textSize="28sp"
-        android:textAllCaps="true"
-        android:fontFamily="sans-serif-black"/>
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="start"
-        android:layout_marginTop="10dp"
-        android:padding="4dp">
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Maxxor"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Selecione Suas Cartas"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28sp" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Intress"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Maxxor"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="start|center"
-            android:text="Takinom"
-            android:textSize="34sp"
-            android:textStyle="italic" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Intress"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Nauthilax"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Takinom"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Tartarek"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Nauthilax"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Najarin"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Tartarek"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Chaor"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Najarin"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Príncipe Mudeenu"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Chaor"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Zhade"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Príncipe Mudeenu"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Monsteler"
-            android:gravity="start|center"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Zhade"
+                android:textSize="34sp"
+                android:textStyle="italic" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Illexia"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Monsteler"
+                android:textSize="34sp" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Sobtjek"
-            android:gravity="start|center"
-            android:textStyle="italic"
-            android:textSize="34sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Illexia"
+                android:textSize="34sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Sobtjek"
+                android:textSize="34sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
