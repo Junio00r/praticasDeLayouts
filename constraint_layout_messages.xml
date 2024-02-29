@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profile_photo"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="Elon Musk"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/acess_information"
+        app:layout_constraintEnd_toStartOf="@id/settings"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toEndOf="@id/profile_photo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/acess_information"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="visto recentemente"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/profile_photo"
+        app:layout_constraintEnd_toEndOf="@id/profile_name"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="@id/profile_name"
+        app:layout_constraintTop_toBottomOf="@id/profile_name" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/setting_icon"
+        app:layout_constraintBottom_toBottomOf="@id/profile_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/profile_name"
+        app:layout_constraintTop_toTopOf="@id/profile_photo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#4C4C4C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/acess_information" />
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="162dp"
+        android:background="#182533"
+        android:padding="10dp"
+        android:text="Olá Cara, o que tá fazendo? To precisando da tua ajuda!"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_photo"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:background="#2B5378"
+        android:padding="10dp"
+        android:text="Agora não posso. Continue tentando por enquanto"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#182533"
+        android:padding="10dp"
+        android:text="Certo!"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/file"
+        app:layout_constraintEnd_toEndOf="@id/message1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_photo"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#182533"
+        android:padding="10dp"
+        android:text="Vou tentar e quem sabe eu consigo"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/file"
+        app:layout_constraintEnd_toEndOf="@id/message1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_photo"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4C4C4C"
+        app:layout_constraintBottom_toTopOf="@id/write_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/file"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/files_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/write_message"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/write_message"
+        style="@style/ButtonRadius"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F3F3F3"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="10dp"
+        android:text="Terminou?"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/file"
+        app:layout_constraintEnd_toStartOf="@id/emoji"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toEndOf="@id/file"
+        app:layout_constraintTop_toTopOf="@id/file" />
+
+    <Button
+        android:id="@+id/emoji"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/emoji_icon"
+        app:layout_constraintBottom_toBottomOf="@id/file"
+        app:layout_constraintEnd_toStartOf="@id/invite_message"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/write_message"
+        app:layout_constraintTop_toTopOf="@id/file" />
+
+    <Button
+        android:id="@+id/invite_message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/send_icon"
+        app:layout_constraintBottom_toBottomOf="@id/file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/emoji"
+        app:layout_constraintTop_toTopOf="@id/file" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
