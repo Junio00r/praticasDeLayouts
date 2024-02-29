@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Spinner
+        android:id="@+id/accounts"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="44dp"
+        android:layout_toStartOf="@id/create_public" />
+
+    <ImageButton
+        android:id="@+id/create_public"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/config"
+        android:background="@null"
+        android:drawableBottom="@drawable/button_background"
+        android:foreground="@drawable/create_pub" />
+
+    <ImageButton
+        android:id="@+id/config"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/create_public"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:foreground="@drawable/setting_icon" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/accounts"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="image of profile"
+        android:src="@drawable/profile_image" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_profile"
+        android:layout_alignStart="@id/image_profile"
+        android:layout_marginTop="4dp"
+        android:text="Junior Oliveira"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_alignStart="@id/user_name"
+        android:text="Hi, i'm a android developer"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/posts_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_profile"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/image_profile"
+        android:padding="4dp"
+        android:text="0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/posts_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/posts_count"
+        android:layout_marginStart="47dp"
+        android:layout_toEndOf="@id/image_profile"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Posts"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/followers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/posts_count"
+        android:layout_marginStart="56dp"
+        android:layout_toEndOf="@id/posts_count"
+        android:padding="4dp"
+        android:text="0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/followers_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/followers_count"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@id/posts_text"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Followers"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/following_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/followers_count"
+        android:layout_marginStart="56dp"
+        android:layout_toEndOf="@id/followers_count"
+        android:padding="4dp"
+        android:text="8"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/following_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/following_count"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@id/followers_count"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Following"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/edit_profile"
+        style="@style/BackgroudButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_description"
+        android:layout_alignStart="@id/profile_description"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toStartOf="@id/add_account"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/add_account"
+        style="@style/BackgroudButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/edit_profile"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="profile"
+        android:foreground="@drawable/profile_avatar"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/edit_profile"
+        android:layout_alignStart="@id/profile_description"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/naruto_image" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/image3"
+        android:layout_toEndOf="@id/image1"
+        android:contentDescription="TODO"
+        android:src="@drawable/image" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image1"
+        android:layout_alignEnd="@id/add_account"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/kakashi" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/image1"
+        android:layout_alignStart="@id/profile_description"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/naruto_image" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image4"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/image3"
+        android:layout_toEndOf="@id/image1"
+        android:contentDescription="TODO"
+        android:src="@drawable/image" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image5"
+        android:layout_alignEnd="@id/add_account"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/kakashi" />
+
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/image4"
+        android:layout_alignStart="@id/profile_description"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/naruto_image" />
+
+    <ImageView
+        android:id="@+id/image8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image7"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/image3"
+        android:layout_toEndOf="@id/image1"
+        android:contentDescription="TODO"
+        android:src="@drawable/image" />
+
+    <ImageView
+        android:id="@+id/image9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image8"
+        android:layout_alignEnd="@id/add_account"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/kakashi" />
+
+    <ImageView
+        android:id="@+id/image10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/image7"
+        android:layout_alignStart="@id/profile_description"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/naruto_image" />
+
+    <ImageView
+        android:id="@+id/image11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image10"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/image3"
+        android:layout_toEndOf="@id/image1"
+        android:contentDescription="TODO"
+        android:src="@drawable/image" />
+
+    <ImageView
+        android:id="@+id/image12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/image11"
+        android:layout_alignEnd="@id/add_account"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/kakashi" />
+
+
+</RelativeLayout>
