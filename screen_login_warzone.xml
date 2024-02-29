@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:foreground="@drawable/login_background"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loggin_button"
+        android:layout_alignEnd="@id/create_account_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="6dp"
+        android:text="Call of Duty Account"
+        android:textColor="#E3E3E3"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/loggin_button"
+        style="@style/ButtonRadiusLoginPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/create_account_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_toStartOf="@id/create_account_button"
+        android:text="LOGIN"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#65A65D" />
+
+    <Button
+        android:id="@+id/create_account_button"
+        style="@style/ButtonRadiusLoginPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="30dp"
+        android:paddingHorizontal="80dp"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#65A65D" />
+
+    <Button
+        android:id="@+id/loggin_guest_button"
+        style="@style/ButtonRadiusLoginPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/create_account_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp"
+        android:layout_toEndOf="@id/create_account_button"
+        android:text="PLAY AS GUEST"
+        android:textColor="#E3E3E3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#323232" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        android:text="1.0"
+        android:textColor="#E3E3E3"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
